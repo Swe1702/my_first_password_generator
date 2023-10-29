@@ -97,7 +97,14 @@ function getPasswordOptions() {   // This function asks user some inputs and sto
     alert("length of the password should be between 8 and 128");
     return;  // if this statement is true this returns the alert and exits the function.
   }
+
+  
+  var specialchar = confirm("Do you want to include special characters in your password????");  // confirms with the user wheather user wants to include special characters in his password or not and stores this answer in other variable. 
+  var lowerChar = confirm("Do you want to include lower case letters in your password????");   // confirms with the user wheather user wants to include lower case letters in his password or not and stores this answer in other variable.
+  var upperChar = confirm("Do you want to include upper case letters in your password????");  // confirms with the user wheather user wants to include upper case letters in his password or not and stores this answer in other variable.
+  var numbers = confirm("Do you want to include numbers in your password????");              // confirms with the user wheather user wants to include numbers in his password or not and stores this answer in other variable.
 }
+
 
  
 
