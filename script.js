@@ -108,6 +108,22 @@ function getPasswordOptions() {   // This function asks user some inputs and sto
     alert("Please select atleast characters for your password");  // alerts the user
     return;  // if this statement is true this returns the alert and exits the function.
   }
+
+  var new_password = []; // variable new_password is initially declars an empty array.
+
+  if(specialchar){  // This if statement stores the user input if users wants to and adds that input to new_password variable.
+    new_password = new_password.concat(specialCharacters);  // concatinates the user input to new_password variable. Now new_password variable is not empty array.
+  }
+  if(lowerChar){   // This if statement stores the user input if users wants to and adds that input to new_password variable.
+    new_password = new_password.concat(lowerCasedCharacters);   // concatinates the user input to new_password variable.
+  }
+  if(upperChar){  // This if statement stores the user input if users wants to and adds that input to new_password variable.
+    new_password = new_password.concat(upperCasedCharacters);   // concatinates the user input to new_password variable.
+  }
+  if(numbers){  // This if statement stores the user input if users wants to and adds that input to new_password variable.
+    new_password = new_password.concat(numericCharacters);    // concatinates the user input to new_password variable.
+  }
+  return [new_password,length]  // returns two values so that we can use them in any function if getPasswordOptions function is called.
 }
 
 
