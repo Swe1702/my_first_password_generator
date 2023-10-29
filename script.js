@@ -89,18 +89,26 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
-function getPasswordOptions() {
 
+function getPasswordOptions() {   // This function asks user some inputs and stores their input in a variable. The input values is added  and stores in new variable. 
+  var length = parseInt(prompt("Enter the length of password(must be a number between 8 and 128)"));// This prompt asks user to select the length of the password.
+
+  if(!( typeof length === "number" && length >=8 && length<=128)){  // This if statement alerts the users if the length of the password is not between 8 ,128 or alerts if its not a number.
+    alert("length of the password should be between 8 and 128");
+    return;  // if this statement is true this returns the alert and exits the function.
+  }
 }
+
+ 
 
 // Function for getting a random element from an array
 function getRandom(arr) {
-
+ 
 }
 
 // Function to generate password with user input
 function generatePassword() {
-
+ 
 }
 
 // Get references to the #generate element
@@ -110,9 +118,10 @@ var generateBtn = document.querySelector('#generate');
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector('#password');
-
   passwordText.value = password;
 }
-
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
+
+
+
