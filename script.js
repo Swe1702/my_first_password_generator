@@ -127,12 +127,10 @@ function getPasswordOptions() {   // This function asks user some inputs and sto
 }
 
 
-
- 
-
 // Function for getting a random element from an array
-function getRandom(arr) {
- 
+function getRandom(arr) {  // This is a function which generates random variables
+    var randomNumber = Math.floor(Math.random()*arr.length);  // Math.floor always rounds down and returns the largest integer and Math.random returns a decimal number that's greater than or equal to 0 and less than 1. Based on array length the random number is generated and stores in a new variable.
+    return arr[randomNumber]; // returns random numbers based on iput of user and this works when getRandom function is called.
 }
 
 // Function to generate password with user input
