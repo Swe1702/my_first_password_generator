@@ -105,7 +105,7 @@ function getPasswordOptions() {   // This function asks user some inputs and sto
   var numbers = confirm("Do you want to include numbers in your password????");              // confirms with the user wheather user wants to include numbers in his password or not and stores this answer in other variable.
 
   if(!specialchar && !lowerChar && !upperChar && !numbers){  // if the user doesn't select any of the above asked questions then the alert function alerts the user to select atleast one character to include in password.
-    alert("Please select atleast characters for your password");  // alerts the user
+    alert("Please select atleast one characters for your password");  // alerts the user
     return;  // if this statement is true this returns the alert and exits the function.
   }
 
