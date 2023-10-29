@@ -147,8 +147,8 @@ function generatePassword() {  //This function adds all the random characters ge
 var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
-function writePassword() {  
-  var password = generatePassword();  
+function writePassword() {  // This function displays the input on the screen to user.
+  var password = generatePassword();  //calling the generatePassword function to display the final output to user.
   var passwordText = document.querySelector('#password');
   passwordText.value = password;
 }
